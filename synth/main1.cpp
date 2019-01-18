@@ -69,11 +69,11 @@ int main()
 	wcout << "www.OneLoneCoder.com - Synthesizer Part 1" << endl << "Single Sine Wave Oscillator, No Polyphony" << endl << endl;
 
 	// Get all sound hardware
-	vector<std::string> devices = olcNoiseMaker<short>::Enumerate();
+	vector<wstring> devices = olcNoiseMaker<short>::Enumerate();
 
 	// Display findings
-	for (auto d : devices) cout << "Found Output Device: " << d << endl;
-	cout << "Using Device: " << devices[0] << endl;
+	for (auto d : devices) wcout << "Found Output Device: " << d << endl;
+	wcout << "Using Device: " << devices[0] << endl;
 
 	// Display a keyboard
 	wcout << endl <<

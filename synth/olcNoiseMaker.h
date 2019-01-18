@@ -73,7 +73,7 @@ template<class T>
 class olcNoiseMaker
 {
 public:
-	olcNoiseMaker(std::string sOutputDevice, unsigned int nSampleRate = 44100, unsigned int nChannels = 1, unsigned int nBlocks = 8, unsigned int nBlockSamples = 512)
+	olcNoiseMaker(wstring sOutputDevice, unsigned int nSampleRate = 44100, unsigned int nChannels = 1, unsigned int nBlocks = 8, unsigned int nBlockSamples = 512)
 	{
 		Create(sOutputDevice, nSampleRate, nChannels, nBlocks, nBlockSamples);
 	}
@@ -172,10 +172,10 @@ public:
 
 
 public:
-	static vector<std::string> Enumerate()
+	static vector<wstring> Enumerate()
 	{
 		int nDeviceCount = waveOutGetNumDevs();
-		vector<std::string> sDevices;
+		vector<wstring> sDevices;
 		WAVEOUTCAPS woc;
 		for (int n = 0; n < nDeviceCount; n++)
 			if (waveOutGetDevCaps(n, &woc, sizeof(WAVEOUTCAPS)) == S_OK)
