@@ -18,12 +18,21 @@
     <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="olcNoiseMaker.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="olcNoiseMaker_VIDEO_PARTS_3_4.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="synth.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
